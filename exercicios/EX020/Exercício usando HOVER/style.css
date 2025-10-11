@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+.links a {
+  display: inline-block;   /* cada link vira uma caixinha separada */
+  padding: 10px 20px;      /* espaço interno */
+  margin: 5px;             /* espaço entre os links */
+
+  
+}
+
+.links a:hover {
+  background-color: darkgray;
+ 
+}

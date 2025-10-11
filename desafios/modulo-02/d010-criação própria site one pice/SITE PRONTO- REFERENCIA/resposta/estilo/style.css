@@ -1,0 +1,214 @@
+@charset "UTF-8";
+
+/* ==================================== */
+/* 1. IMPORTAÇÃO DE FONTES (Google Fonts) */
+/* ==================================== */
+
+/* Importa Oswald (Titulos/Bold) e Permanent Marker (Destaque/Manuscrita) */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;700&family=Permanent+Marker&family=Open+Sans:wght@300;400;700&display=swap');
+
+
+/* ==================================== */
+/* 2. VARIÁVEIS CSS (:ROOT) */
+/* ==================================== */
+
+:root {
+    /* CORES (Baseadas no Alto Contraste: Vermelho, Amarelo, Azul Marinho) */
+    --cor1: #E30B1C;        /* Cor de Ação: Títulos H1, Botões, Destaque */
+    --cor2: #FFC700;        /* Cor de Destaque: Background da NAV e ASIDE */
+    --cor3: #102A43;        /* Cor Estrutural: Background do HEADER e FOOTER, Cor do H2, Cor dos Links */
+    --cor4: #FFF8E6;        /* Fundo Claro Principal: Background do BODY e MAIN (Leitura) */
+    --cor5: #FFFFFF;        /* Cor de Texto Clara: HEADER e FOOTER Textos */
+    --cor6: #D9AA00;        /* Ouro Escuro Secundário */
+    
+    /* FONTES */
+    --fonte-titulos: 'Oswald', sans-serif;
+    --fonte-destaque: 'Permanent Marker', cursive; /* Usar 'cursive' para fontes manuscritas */
+    --fonte-paragrafos: 'Open Sans', sans-serif;
+}
+
+
+/* ==================================== */
+/* 3. CONFIGURAÇÕES GERAIS (RESET) */
+/* ==================================== */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor4); /* Fundo Creme Claro (para leitura suave) */
+    font-family: var(--fonte-paragrafos);
+    color: var(--cor3); /* Cor padrão do texto (Azul Marinho) */
+}
+
+/* Links globais */
+a {
+    color: var(--cor1); /* Links em Vermelho Ação */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: var(--cor3);
+    text-decoration: underline;
+}
+
+
+/* ==================================== */
+/* 4. ESTRUTURA E LAYOUT */
+/* ==================================== */
+
+header {
+    background-color: var(--cor3); /* Azul Marinho (Estrutura) */
+    color: var(--cor5);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+header > h1 {
+    font-family: var(--fonte-destaque); /* Fonte Manuscrita de Destaque */
+    font-size: 3em;
+    color: var(--cor2); /* Destaque em Amarelo Dourado */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.4);
+}
+
+header > p {
+    font-family: var(--fonte-paragrafos);
+    color: var(--cor5);
+    font-size: 1.2em;
+}
+
+nav {
+    background-color: var(--cor2); /* Amarelo Dourado (Destaque/Separação) */
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.19);
+}
+
+nav > a {
+    color: var(--cor3); /* Links em Azul Marinho sobre o Amarelo */
+    padding: 10px;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+    font-weight: 700;
+}
+
+nav > a:hover {
+    background-color: var(--cor3); /* Inverte a cor no hover */
+    color: var(--cor5); /* Texto branco no hover */
+}
+
+main {
+    max-width: 1000px;
+    min-width: 320px;
+    margin: auto;
+    padding: 20px;
+    background-color: var(--cor5); /* Branco Puro no centro (dentro do fundo creme) */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+/* ==================================== */
+/* 5. CONTEÚDO DO ARTIGO */
+/* ==================================== */
+
+article h1 {
+    font-family: var(--fonte-titulos);
+    color: var(--cor1); /* Vermelho Ação no Título do Artigo */
+    font-weight: 700;
+    font-size: 2em;
+    padding-top: 10px;
+    margin-bottom: 15px;
+}
+
+article h2 {
+    font-family: var(--fonte-titulos);
+    color: var(--cor3); /* Azul Marinho nos Subtítulos */
+    font-weight: 500;
+    font-size: 1.6em;
+    background-image: linear-gradient(to right, var(--cor2), transparent); /* Gradiente Amarelo */
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+article p {
+    line-height: 1.8em;
+    margin: 15px 0px;
+    text-align: justify;
+}
+
+article strong {
+    color: var(--cor1); /* Destaca nomes importantes em Vermelho */
+}
+
+article img {
+    width: 100%;
+    margin: 20px 0px;
+    display: block;
+}
+
+iframe {
+    width: 100%;
+    max-width: 560px;
+    display: block;
+    margin: 20px auto;
+}
+
+
+/* ==================================== */
+/* 6. BARRA LATERAL (ASIDE) */
+/* ==================================== */
+
+aside {
+    background-color: var(--cor2); /* Amarelo Dourado (Wanted Poster) */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+aside h3 {
+    font-family: var(--fonte-destaque);
+    background-color: var(--cor3); /* Fundo Azul Marinho para o título */
+    color: var(--cor5);
+    padding: 5px;
+    margin: -10px -10px 15px -10px; /* Expande para as bordas */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+aside ul {
+    list-style-type: '\2726\00A0\00A0'; /* Usa um ícone de estrela/âncora como marcador */
+    list-style-position: inside;
+    columns: 2; /* Cria duas colunas para a lista de frutas */
+    padding-left: 10px;
+}
+
+aside p {
+    color: var(--cor3); /* Texto em Azul Marinho no aside */
+}
+
+
+/* ==================================== */
+/* 7. RODAPÉ (FOOTER) */
+/* ==================================== */
+
+footer {
+    background-color: var(--cor3); /* Azul Marinho (Estrutura) */
+    color: var(--cor5);
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8em;
+    margin-top: 20px;
+}
+
+footer a {
+    color: var(--cor2); /* Links no rodapé em Amarelo Dourado */
+    font-weight: bold;
+}

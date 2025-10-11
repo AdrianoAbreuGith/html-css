@@ -1,0 +1,200 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: bebasneue;
+    src: url('fontes/BebasNeue-Regular.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: idroid;
+    src: url('fontes/idroid.otf') format("opentype");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ccecd4;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.18);
+}
+header {
+    padding: 20px 0px;  
+    width: 100%;
+    background: linear-gradient(to top, #58A66B, #58a66b8a );
+    text-align: center;
+    color: white;
+    font-family: "bebasneue", cursive;
+    font-size: 30px;
+    
+       
+}
+
+nav {
+  display: flex;
+}
+
+nav span {
+  padding: 0px 10px;
+  color: white;
+
+
+}
+
+
+header nav span:hover {
+  background-color: #1650241c;
+  
+}
+
+nav span a {
+  color: white;
+  text-decoration: none;
+}
+
+.main1 {
+  max-width: 900px;     /* largura máxima do conteúdo */
+  margin: 0px auto;    /* centraliza e cria espaço nas laterais */
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;   /* <<< É aqui que as bordas ficam arredondadas */
+}
+
+.article1 {
+  padding: 0px 20px;
+  background-color: white;
+  justify-content: center;
+  
+}
+
+.titulo-main {
+  font-family: "idroid", sans-serif;
+  font-size: 28px;
+  color: #155826;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.18);
+}
+
+.textos {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.5em;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.18);
+}
+
+
+.subtitulos {
+  font-family: "idroid", sans-serif;  
+  font-size: 22px;
+  color: #155826;
+  background: linear-gradient(to right, #7dd192, #7dd19215 );
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.18);
+}
+
+.fotos {
+  display: block;        /* transforma em bloco */
+  margin: 20px auto;     /* centraliza horizontalmente */
+  max-width: 100%;       /* impede de ultrapassar o tamanho da tela */
+  height: auto;          /* mantém proporção */
+}
+
+.video {
+  display: block;
+  margin: 30px auto; /* centraliza horizontalmente */
+  max-width: 100%;   /* garante que não estoure da tela */
+  height: auto;  
+  width: 1000px;
+}
+
+main span {
+   align-items: center;
+  display: flex;
+  border-radius: 8px 8px 0px 0px;
+  padding: 0px 10px;
+  color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  letter-spacing: 1px; /* aumenta o espaço entre as letras */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.18);
+  background-color: #58A66B;
+  height: 40px;
+  
+}
+
+.listas-colunas {
+    display: flex;
+    gap: 300px; /* space between the lists */
+    flex-wrap: wrap; /* allow wrapping on small screens */
+}
+
+.listas-colunas ul {
+    margin: 0;
+    padding: 0 10px;
+    list-style: none; /* remove default dots */
+    min-width: 180px; /* prevent columns from getting too narrow */
+}
+
+.listas-colunas ul li {
+    position: relative;
+    padding-left: 24px; /* space for the checkmark */
+    margin-bottom: 6px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.18);
+}
+
+.listas-colunas ul li::before {
+    content: "✔"; /* adiciona o símbolo ✔ */
+    position: absolute; /* posiciona em relação ao <li> */
+    left: 0; /* encosta na esquerda */
+    color: #58A66B;
+    font-size: 18px;
+    top: 0; /* alinha no topo */
+}
+
+/* Responsive: stack columns vertically on small screens */
+@media (max-width: 700px) {
+    .listas-colunas {
+        flex-direction: column;
+        gap: 0;
+        align-items: flex-start;
+    }
+    .listas-colunas ul {
+        min-width: unset;
+        width: 100%;
+        padding: 0 0 0 20px;
+    }
+}
+
+aside {
+  background-color: #B2D8C7;
+  border-radius: 8px;
+  
+}
+
+aside p.textos {
+    margin-left: 30px;
+    content: justify;
+}
+
+footer p {
+  text-align: center;
+  color: white;
+  line-height: 0.1; /* Ajuste este valor para diminuir ou aumentar o espaçamento */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.18);
+}
+
+footer {
+  background-color: #155826;
+  padding-top: 0.5px; /* Isso cria o espaçamento interno, com a cor de fundo */
+  padding-bottom: 0.5px; /* Mantém o espaçamento interno na parte de baixo */
+  margin-top: 20px; /* Certifique-se de que não há margem extra */
+  
+  
+}
+
+/* Style the Android History link */
+a[href="https://www.android.com/intl/pt_br/what-is-android/"] {
+    color: #155826 !important;
+    text-decoration: none;
+}
+
+a[href="https://www.android.com/intl/pt_br/what-is-android/"]:visited,
+a[href="https://www.android.com/intl/pt_br/what-is-android/"]:active {
+    color: #155826 !important;
+    text-decoration: none;
+}
