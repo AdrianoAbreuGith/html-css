@@ -4,7 +4,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 /*.sriracha-regular {
   font-family: "Sriracha", cursive;
@@ -20,6 +19,7 @@
 
 
 body {
+    min-height: 100vh;
     margin: 0;
     padding: 0;
     letter-spacing: 1px;
@@ -39,10 +39,11 @@ header h1 {
     margin: 0px ;
     padding: 80px 0px 0px 0px;
     text-align: center;
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 900;
+    font-family: "Passion One", sans-serif;
+    font-weight: 700;
      font-style: normal;
     font-size: 90px;
+    font-variant: small-caps;
     letter-spacing: 2px;
     
     
@@ -56,11 +57,12 @@ header h2 {
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 80px 0px;
     text-align: center;
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Passion One", sans-serif;
     font-weight: 400;
      font-style: normal;
     font-weight: 200;
-    font-size: 20px;
+    font-size: 25px;
+    font-variant: small-caps;
     letter-spacing: 2px;
     
 }
@@ -70,8 +72,10 @@ header h2 > a:hover {
 }
 
 
-main section {
-    padding:  250px 0px 250px 10px;
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding:  150px 0px 150px 15px;
     background-color: rgb(255, 255, 255);
     min-height: 300px;
     max-height: 900px;
