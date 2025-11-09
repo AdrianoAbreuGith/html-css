@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px;
+            
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+        
+        caption{
+           text-align: center;
+           font-size: 20px;
+           font-weight: bold;
+           padding: 10px;
+        }
+        
+
+        tr , td , th {
+            width: 200px;
+            border: 1px solid black;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            padding: 5px;
+            
+        }
+
+        .titulos{
+            font-weight: bold;
+            width: 100px;
+            text-align: center;
+            padding: 10px;
+;
+        }
+
+        td:not(.titulos) {
+            white-space: nowrap; /* Prevents text from wrapping to the next line */
+        }
+    
+        </style>
+</head>
+<body>
+    <h1>Exercício de tabelas</h1>
+    <table>
+        <caption>Filmes Favoritos</caption>
+        <tr>
+            <th scope="col" class="titulos">Grupo</th>
+            <th scope="col" class="titulos">Nomes</th>
+            <th class="titulos" scope="colgroup" colspan="3">Filmes</th>
+        </tr>
+        <tr>
+            <th class="titulos" scope="rowgroup" rowspan="2">Mulheres</th>
+            <td>Ana Maria Santos</td>
+            <td>Alien</td>
+            <td>Rambo</td>
+            <td>Vingadoes</td>
+        </tr>
+        <tr>
+            <td>Beatriz Souza</td>
+            <td>Hulk</td>
+            <td>Inception</td>
+            <td>Batman</td>
+            
+        </tr>
+        <tr>        
+            <th class="titulos" scope="rowgroup" rowspan="2">Homens</th>
+            <td>Bruno Mendonça</td>
+            <td>Intocáveis</td>
+            <td>Amnésia</td>
+            <td>Gladiador</td>
+        </tr> 
+        <tr>
+            <td>Daniel Lourenço</td>
+            <td>Wall-E</td>
+            <td>Oldboy</td>
+            <td>Dangal</td>
+            
+                        
+
+    </table>
+</body>
+</html>
