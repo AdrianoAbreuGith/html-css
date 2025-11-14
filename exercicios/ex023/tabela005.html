@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 8px 12px;
+            text-align: left;
+        }
+        caption {
+            caption-side: top;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .cinza {
+            background-color: gray;
+        }
+        .amarelo {
+            background-color: lightyellow;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabelas</h1>
+
+    <table>
+        <colgroup>
+            <col class="cinza"></col>
+            <col class="amarelo"></col>
+            <col class="cinza"></col>
+            <col class="amarelo"></col>
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope=" col">Nome</th>
+            <th scope=" col">Sexo</th>
+            <th scope=" col">Idade</th>
+            <th scope=" col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>Feminino</td>
+            <td>28</td>
+            <td>Engenheira</td> 
+        </tr>
+        <tr>
+            <td>Bruno</td>
+            <td>Masculino</td>
+            <td>34</td>
+            <td>Médico</td>
+        </tr>
+        <tr>
+            <td>Carla</td>
+            <td>Feminino</td>
+            <td>25</td>
+            <td>Designer</td>
+        </tr>
+        <tr>
+            <td>Daniel</td>
+            <td>Masculino</td>
+            <td>30</td>
+            <td>Professor</td>
+        </tr>   
+        <tr>
+            <td>Eva</td>
+            <td>Feminino</td>
+            <td>29</td>
+            <td>Advogada</td>
+        </tr>
+        <tr>    
+            <td>Felipe</td>
+            <td>Masculino</td>
+            <td>31</td>
+            <td>Arquiteto</td>
+        </tr>
+    </table>
+</body>
+</html>
